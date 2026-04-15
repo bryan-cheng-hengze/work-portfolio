@@ -12,6 +12,7 @@ import {
   SidebarMenuItem,
   SidebarFooter,
   SidebarHeader,
+  useSidebar,
 } from "@/components/ui/sidebar"
 import { ModeToggle } from "./ModeToggle"
 import { listNavItems } from "@/data/navbar"
@@ -31,6 +32,12 @@ const contactItems = [
 
 export function HomeSidebar() {
   const { pathname } = useLocation()
+  const { isMobile, setOpenMobile } = useSidebar()
+  const handleItemClick = () => {
+    if (isMobile) {
+      setOpenMobile(false)
+    }
+  }
 
   return (
     <Sidebar>
@@ -50,7 +57,7 @@ export function HomeSidebar() {
               {mainNavItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild isActive={pathname === item.url}>
-                    <Link to={item.url}>
+                    <Link to={item.url} onClick={handleItemClick}>
                       <item.icon />
                       <span>{item.title}</span>
                     </Link>
@@ -68,7 +75,7 @@ export function HomeSidebar() {
               {listNavItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild isActive={pathname === item.href}>
-                    <Link to={item.href}>
+                    <Link to={item.href} onClick={handleItemClick}>
                       <span>{item.title}</span>
                     </Link>
                   </SidebarMenuButton>
@@ -85,7 +92,7 @@ export function HomeSidebar() {
               {contactItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <a href={item.url} target="_blank" rel="noopener noreferrer">
+                    <a href={item.url} target="_blank" rel="noopener noreferrer" onClick={handleItemClick}>
                       <item.icon />
                       <span>{item.title}</span>
                     </a>
