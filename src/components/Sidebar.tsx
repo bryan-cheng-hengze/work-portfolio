@@ -36,7 +36,7 @@ export function HomeSidebar() {
     <Sidebar>
       <SidebarHeader className="p-4">
         <Link to="/" className="flex items-center" aria-label="Home">
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-white ring-1 ring-border shadow-sm">
+          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-transparent ring-1 ring-border shadow-sm">
             <img src="/logo.png" alt="Bryan Cheng" className="h-7 w-7 object-contain" />
           </span>
         </Link>

@@ -21,7 +21,7 @@ import { Link } from 'react-router-dom'
 type Stat = { to?: number; suffix?: string; display?: string; label: string }
 
 const stats: Stat[] = [
-  { to: 3, suffix: '+', label: 'Years experience' },
+  { to: 4, suffix: '+', label: 'Years experience' },
   { to: 30, suffix: '+', label: 'Languages & tools' },
   { to: 50, suffix: '+', label: 'Frameworks & platforms' },
   { display: 'E3', label: 'Senior level' },
@@ -217,7 +217,7 @@ function HomePage() {
           <div className="max-[720px]:flex hidden sticky top-0 z-50 bg-background/85 backdrop-blur-md border-b border-border items-center justify-between px-4 h-14">
             <SidebarTrigger />
             <Link to="/" className="flex items-center" aria-label="Home">
-              <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white ring-1 ring-border shadow-sm">
+              <span className="flex h-8 w-8 items-center justify-center rounded-md bg-transparent ring-1 ring-border shadow-sm">
                 <img src="/logo.png" alt="Bryan Cheng" className="h-6 w-6 object-contain" />
               </span>
             </Link>
@@ -348,7 +348,7 @@ function HomePage() {
                       Engineering meaningful outcomes through code.
                     </h2>
                     <p className="mt-5 text-base sm:text-lg text-muted-foreground leading-relaxed">
-                      With over three years of professional experience, I specialize in designing and developing
+                      With over four years of professional experience, I specialize in designing and developing
                       end-to-end software solutions that solve complex business problems. My expertise spans
                       automation, data analysis, real-time streaming, web development, and artificial intelligence.
                     </p>
