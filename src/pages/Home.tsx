@@ -14,7 +14,7 @@ import { projects } from '../data/projects'
 import { tools } from '../data/tools'
 import {
   Mail, Github, Linkedin, Twitter,
-  Download, ArrowUpRight, Sparkles, Code2, Database, Shield, BrainCircuit
+  Download, ArrowUpRight, Sparkles, Code2, Database, Shield, BrainCircuit, Layers
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
@@ -68,7 +68,12 @@ const expertise = [
   {
     icon: Database,
     title: 'Data & Analytics',
-    description: 'Pipelines, dashboards, and real-time streaming with SQL, Python, and KSQL.',
+    description: 'Pipelines, dashboards, and decision-ready analytics with SQL, Python, and BI tooling.',
+  },
+  {
+    icon: Layers,
+    title: 'Data Engineering',
+    description: 'Kafka streaming, data lakehouses, and sharded platforms engineered for scale.',
   },
   {
     icon: Shield,
@@ -350,7 +355,7 @@ function HomePage() {
                     <p className="mt-5 text-base sm:text-lg text-muted-foreground leading-relaxed">
                       With over four years of professional experience, I specialize in designing and developing
                       end-to-end software solutions that solve complex business problems. My expertise spans
-                      automation, data analysis, real-time streaming, web development, and artificial intelligence.
+                      automation, data engineering, web development, and artificial intelligence.
                     </p>
                     <p className="mt-4 text-base sm:text-lg text-muted-foreground leading-relaxed">
                       By combining technical rigor with a practical, solution-oriented mindset, I make sure every
@@ -382,7 +387,7 @@ function HomePage() {
                   </p>
                 </div>
 
-                <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
                   {expertise.map(({ icon: Icon, title, description }) => (
                     <div
                       key={title}

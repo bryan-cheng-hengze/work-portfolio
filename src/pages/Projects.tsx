@@ -91,7 +91,7 @@ export const ProjectsPage: React.FC = () => {
           Work, shipped and in motion.
         </h1>
         <p className="mt-4 text-muted-foreground text-base sm:text-lg max-w-2xl leading-relaxed">
-          A selection of initiatives - spanning data engineering, automation, and applied AI.
+          A selection of initiatives - spanning data & analytics, data engineering, automation, and applied AI.
           Some are under NDA; the summaries below reflect what I can share publicly.
         </p>
       </div>

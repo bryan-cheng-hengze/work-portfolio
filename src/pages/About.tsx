@@ -5,13 +5,14 @@ import { Link } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import {
-  Download, ArrowUpRight, Zap, Layers, Cpu, GitBranch,
+  Download, ArrowUpRight, Zap, Layers, Cpu, GitBranch, Database,
   Sparkles, HeartHandshake, BookOpen, Compass, Workflow
 } from 'lucide-react'
 
 const expertise = [
   { icon: Workflow, title: 'Automation', text: 'Workflow automation, RPA, and orchestration of complex pipelines.' },
-  { icon: Layers, title: 'Data engineering', text: 'Analysis, visualization, and real-time data streaming with Kafka / KSQL.' },
+  { icon: Database, title: 'Data & Analytics', text: 'Pipelines, dashboards, and decision-ready analytics with SQL, Python, and BI tooling.' },
+  { icon: Layers, title: 'Data engineering', text: 'Kafka streaming, data lakehouses, and sharded data platforms engineered for scale.' },
   { icon: Zap, title: 'Web development', text: 'Modern full-stack apps with a bias toward maintainable architecture.' },
   { icon: Cpu, title: 'AI & ML', text: 'LLM agents, RAG, and embedding production ML into business workflows.' },
 ]
@@ -78,7 +79,7 @@ export const AboutPage: React.FC = () => {
           </p>
         </div>
 
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {expertise.map(({ icon: Icon, title, text }) => (
             <div key={title} className="rounded-2xl border border-border bg-card p-6 hover:border-brand/40 transition-colors">
               <div className="flex items-start gap-4">
