@@ -3,10 +3,9 @@ import profileImage from '../assets/profile.jpg'
 import resume from '../assets/Bryan Cheng Hengze - Resume.pdf'
 import { Link } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
 import {
   Download, ArrowUpRight, Zap, Layers, Cpu, GitBranch, Database,
-  Sparkles, HeartHandshake, BookOpen, Compass, Workflow
+  HeartHandshake, BookOpen, Compass, Workflow
 } from 'lucide-react'
 
 const expertise = [
@@ -28,44 +27,51 @@ export const AboutPage: React.FC = () => {
   return (
     <div className="max-w-5xl mx-auto">
       {/* Header */}
-      <div className="relative overflow-hidden rounded-3xl border border-border bg-card card-elevated">
-        <div className="absolute inset-0 bg-grid-pattern opacity-30 mask-fade-bottom pointer-events-none" />
-        <div className="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-brand/20 blur-3xl pointer-events-none" />
-
-        <div className="relative grid grid-cols-1 md:grid-cols-3 gap-8 p-6 sm:p-10 md:p-12">
-          <div className="md:col-span-1 flex md:justify-start justify-center">
-            <div className="relative">
-              <div className="absolute -inset-3 rounded-3xl bg-gradient-to-br from-brand/30 to-transparent blur-xl opacity-70" />
-              <div className="relative w-40 h-40 sm:w-48 sm:h-48 md:w-full md:h-auto md:aspect-square rounded-2xl overflow-hidden ring-1 ring-border">
-                <img src={profileImage} alt="Bryan Cheng Hengze" className="w-full h-full object-cover" />
-              </div>
-            </div>
-          </div>
-
-          <div className="md:col-span-2">
-            <Badge variant="outline" className="mb-4 bg-brand-soft text-brand border-brand/20">
-              <Sparkles className="w-3 h-3 mr-1.5" />
-              About me
-            </Badge>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-balance">
-              Hi, I'm Bryan - <span className="text-gradient-brand">software engineer</span> focused on practical, impactful systems.
-            </h1>
-            <p className="mt-5 text-base sm:text-lg text-muted-foreground leading-relaxed">
-              I craft end-to-end software solutions that solve real-world business problems.
-              My approach blends deep technical knowledge with a strong sense of business context -
-              resulting in systems that are scalable, secure, and genuinely useful.
+      <header className="pt-4 pb-14 sm:pt-8 sm:pb-20 border-b border-border">
+        <div className="grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-8 sm:gap-12 items-start">
+          <img
+            src={profileImage}
+            alt="Bryan Cheng Hengze"
+            className="w-28 h-28 sm:w-36 sm:h-36 rounded-full object-cover ring-1 ring-border"
+          />
+          <div>
+            <p className="text-xs uppercase tracking-[0.22em] text-muted-foreground">
+              Bryan Cheng Hengze &middot; Software Engineer
             </p>
-            <div className="mt-7 flex flex-wrap gap-3">
-              <a href={resume} download="Bryan Cheng Hengze - Resume.pdf">
-                <Button className="rounded-full gap-2"><Download className="w-4 h-4" /> Résumé</Button>
+            <h1 className="mt-3 text-2xl sm:text-3xl lg:text-[2.25rem] font-semibold tracking-tight leading-[1.15] text-balance">
+              Software engineer working across data, security, and AI.
+            </h1>
+            <p className="mt-5 text-base text-muted-foreground leading-relaxed max-w-2xl">
+              Four years in, most of my work sits at the intersection of data engineering, DevSecOps, and
+              applied AI. I focus on production systems - the kind that have to keep running on real
+              data, under real load, long after the launch ticket is closed.
+            </p>
+            <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
+              <a
+                href={resume}
+                download="Bryan Cheng Hengze - Resume.pdf"
+                className="inline-flex items-center gap-1.5 text-foreground hover:text-brand transition-colors"
+              >
+                <Download className="w-4 h-4" /> Résumé
               </a>
-              <Link to="/projects">
-                <Button variant="outline" className="rounded-full gap-2">Projects <ArrowUpRight className="w-4 h-4" /></Button>
+              <span className="h-3 w-px bg-border" aria-hidden />
+              <Link
+                to="/projects"
+                className="inline-flex items-center gap-1.5 text-foreground hover:text-brand transition-colors"
+              >
+                Projects <ArrowUpRight className="w-4 h-4" />
               </Link>
+              <span className="h-3 w-px bg-border" aria-hidden />
+              <a
+                href="mailto:bryan.chengze@gmail.com"
+                className="inline-flex items-center gap-1.5 text-foreground hover:text-brand transition-colors"
+              >
+                Email
+              </a>
             </div>
           </div>
         </div>
-      </div>
+      </header>
 
       {/* Expertise */}
       <section className="mt-16 sm:mt-20">

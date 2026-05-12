@@ -14,7 +14,7 @@ import { projects } from '../data/projects'
 import { tools } from '../data/tools'
 import {
   Mail, Github, Linkedin, Twitter,
-  Download, ArrowUpRight, Sparkles, Code2, Database, Shield, BrainCircuit, Layers
+  Download, ArrowUpRight, Sparkles, Code2, Database, Shield, BrainCircuit, Layers, Workflow
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
@@ -78,7 +78,7 @@ const expertise = [
   {
     icon: Shield,
     title: 'DevSecOps',
-    description: 'Secure automation, RBAC, and modernization of legacy systems at scale.',
+    description: 'Hardened pipelines, RBAC, and threat-aware modernization of legacy systems at scale.',
   },
   {
     icon: BrainCircuit,
@@ -89,6 +89,11 @@ const expertise = [
     icon: Code2,
     title: 'Full-Stack',
     description: 'End-to-end apps in modern frameworks aligned with business goals.',
+  },
+  {
+    icon: Workflow,
+    title: 'Automation',
+    description: 'Workflow orchestration, scripting, and self-service tooling that retire repetitive ops work.',
   },
 ]
 
@@ -276,7 +281,7 @@ function HomePage() {
                     <p className="text-sm sm:text-base uppercase tracking-[0.22em] text-muted-foreground font-medium">
                       Data <span className="text-foreground/30 mx-1.5">/</span>{' '}
                       DevSecOps <span className="text-foreground/30 mx-1.5">/</span>{' '}
-                      AI Engineering
+                      AIOps
                     </p>
                   </div>
 
@@ -387,7 +392,7 @@ function HomePage() {
                   </p>
                 </div>
 
-                <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+                <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
                   {expertise.map(({ icon: Icon, title, description }) => (
                     <div
                       key={title}

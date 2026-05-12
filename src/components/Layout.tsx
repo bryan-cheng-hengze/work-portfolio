@@ -121,9 +121,8 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
           <SidebarInset className="flex-1 flex flex-col min-h-screen">
             <div className="max-[720px]:flex hidden sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border items-center justify-between px-4 h-14">
               <SidebarTrigger />
-              <Link to="/" className="flex items-center gap-2">
-                <span className="flex h-7 w-7 items-center justify-center rounded-md bg-brand text-brand-foreground text-xs font-semibold">B</span>
-                <span className="text-sm font-semibold tracking-tight">Bryan Cheng</span>
+              <Link to="/" className="flex items-center">
+                <span className="text-sm font-semibold tracking-tight">Bryan Cheng Hengze</span>
               </Link>
               <div className="w-9" />
             </div>
