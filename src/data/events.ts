@@ -2,10 +2,58 @@ import type { Events } from "@/types/events";
 
 export const events: Events = [
   {
+    title: 'AIOps Associate Manager',
+    description: 'Promoted',
+    extendedDescription: 'Promoted to AIOps Associate Manager at Fiuu',
+    date: 'Now',
+    isChecked: true,
+    iconType: 'promotion',
+    events: [
+      {
+        title: "Owning the AIOps Product Roadmap",
+        isChecked: true,
+      },
+      {
+        title: "Building and Leading the AI Engineering Team",
+        isChecked: true,
+      },
+      {
+        title: "Scaling AI Platforms Across the Organization",
+        isChecked: true,
+      },
+      {
+        title: "Partnering with Stakeholders on AI Strategy",
+        isChecked: true,
+      }
+    ],
+  },
+  {
+    title: 'Fiuu Recognition Award',
+    description: 'Achieved',
+    extendedDescription: 'Innovation Champion',
+    date: 'August 2026',
+    isChecked: true,
+    iconType: 'award',
+    events: [
+      {
+        title: "Live Fraud Detection & Risk Alert System",
+        isChecked: true,
+      },
+      {
+        title: "Real-Time Financial Intelligence Dashboard",
+        isChecked: true,
+      },
+      {
+        title: "Leading AI-native Product Development End-to-End",
+        isChecked: true,
+      }
+    ],
+  },
+  {
     title: 'Senior AIOps Engineer (E3)',
     description: 'Promoted',
     extendedDescription: 'Promoted to Senior AIOps Engineer (E3) at Fiuu',
-    date: 'Now',
+    date: 'April 2026',
     isChecked: true,
     iconType: 'promotion',
     events: [

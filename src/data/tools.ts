@@ -8,6 +8,15 @@ import aws from '../assets/aws.png';
 import selenium from '../assets/selenium.png';
 import langchain from '../assets/langchain.png';
 import cloudflare from '../assets/cloudflare.png';
+import openai from '../assets/openai.png';
+import claude from '../assets/claude.png';
+import codex from '../assets/codex.png';
+import langfuse from '../assets/langfuse.png';
+import gcp from '../assets/gcp.png';
+import huaweicloud from '../assets/huaweicloud.png';
+import flink from '../assets/flink.png';
+import lakehouse from '../assets/lakehouse.png';
+import mongodb from '../assets/mongodb.png';
 
 export interface Tool {
   name: string;
@@ -61,6 +70,34 @@ export const tools: Tool[] = [
     isInversed: true
   },
   {
+    name: "OpenAI",
+    category: "Proficient",
+    url: "https://openai.com/",
+    image: openai,
+    isInversed: true
+  },
+  {
+    name: "Claude",
+    category: "Proficient",
+    url: "https://claude.com/",
+    image: claude,
+    isInversed: false
+  },
+  {
+    name: "Codex",
+    category: "Proficient",
+    url: "https://openai.com/codex/",
+    image: codex,
+    isInversed: true
+  },
+  {
+    name: "Langfuse",
+    category: "Proficient",
+    url: "https://langfuse.com/",
+    image: langfuse,
+    isInversed: false
+  },
+  {
     name: "Confluent",
     category: "Intermediate",
     url: "https://www.confluent.io/",
@@ -87,5 +124,40 @@ export const tools: Tool[] = [
     url: "https://www.cloudflare.com/",
     image: cloudflare,
     isInversed: false
+  },
+  {
+    name: "Google Cloud",
+    category: "Intermediate",
+    url: "https://cloud.google.com/",
+    image: gcp,
+    isInversed: false
+  },
+  {
+    name: "Huawei Cloud",
+    category: "Intermediate",
+    url: "https://www.huaweicloud.com/intl/en-us/",
+    image: huaweicloud,
+    isInversed: false
+  },
+  {
+    name: "Apache Flink",
+    category: "Intermediate",
+    url: "https://flink.apache.org/",
+    image: flink,
+    isInversed: false
+  },
+  {
+    name: "Lakehouse",
+    category: "Intermediate",
+    url: "https://www.databricks.com/glossary/data-lakehouse",
+    image: lakehouse,
+    isInversed: false
+  },
+  {
+    name: "MongoDB",
+    category: "Intermediate",
+    url: "https://www.mongodb.com/",
+    image: mongodb,
+    isInversed: false
   }
-]; 
+];
