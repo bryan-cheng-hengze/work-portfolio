@@ -226,11 +226,6 @@ function HomePage() {
         <SidebarInset className="flex-1">
           <div className="max-[720px]:flex hidden sticky top-0 z-50 bg-background/85 backdrop-blur-md border-b border-border items-center justify-between px-4 h-14">
             <SidebarTrigger />
-            <Link to="/" className="flex items-center" aria-label="Home">
-              <span className="flex h-8 w-8 items-center justify-center rounded-md bg-transparent ring-1 ring-border shadow-sm">
-                <img src="/logo.png" alt="Bryan Cheng" className="h-6 w-6 object-contain" />
-              </span>
-            </Link>
             <div className="w-9" />
           </div>
 

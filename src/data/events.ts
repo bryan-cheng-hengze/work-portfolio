@@ -2,9 +2,9 @@ import type { Events } from "@/types/events";
 
 export const events: Events = [
   {
-    title: 'AIOps Associate Manager',
+    title: 'AIOps Associate Manager (M2)',
     description: 'Promoted',
-    extendedDescription: 'Promoted to AIOps Associate Manager at Fiuu',
+    extendedDescription: 'Promoted to AIOps Associate Manager (M2) at Fiuu',
     date: 'Now',
     isChecked: true,
     iconType: 'promotion',
