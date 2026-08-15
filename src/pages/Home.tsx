@@ -24,7 +24,7 @@ const stats: Stat[] = [
   { to: 5, suffix: '+', label: 'Years experience' },
   { to: 30, suffix: '+', label: 'Languages & tools' },
   { to: 50, suffix: '+', label: 'Frameworks & platforms' },
-  { display: 'AM', label: 'Associate Manager' },
+  { display: 'M2', label: 'Associate Manager' },
 ]
 
 function CountUp({ to, delay = 0, duration = 1600 }: { to: number; delay?: number; duration?: number }) {
