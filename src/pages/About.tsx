@@ -42,7 +42,7 @@ export const AboutPage: React.FC = () => {
               Software engineer working across data, security, and AI.
             </h1>
             <p className="mt-5 text-base text-muted-foreground leading-relaxed max-w-2xl">
-              Four years in, most of my work sits at the intersection of data engineering, DevSecOps, and
+              Five years in, most of my work sits at the intersection of data engineering, DevSecOps, and
               applied AI. I focus on production systems - the kind that have to keep running on real
               data, under real load, long after the launch ticket is closed.
             </p>

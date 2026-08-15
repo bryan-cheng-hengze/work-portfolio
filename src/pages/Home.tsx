@@ -21,10 +21,10 @@ import { Link } from 'react-router-dom'
 type Stat = { to?: number; suffix?: string; display?: string; label: string }
 
 const stats: Stat[] = [
-  { to: 4, suffix: '+', label: 'Years experience' },
+  { to: 5, suffix: '+', label: 'Years experience' },
   { to: 30, suffix: '+', label: 'Languages & tools' },
   { to: 50, suffix: '+', label: 'Frameworks & platforms' },
-  { display: 'E3', label: 'Senior level' },
+  { display: 'AM', label: 'Associate Manager' },
 ]
 
 function CountUp({ to, delay = 0, duration = 1600 }: { to: number; delay?: number; duration?: number }) {
@@ -358,7 +358,7 @@ function HomePage() {
                       Engineering meaningful outcomes through code.
                     </h2>
                     <p className="mt-5 text-base sm:text-lg text-muted-foreground leading-relaxed">
-                      With over four years of professional experience, I specialize in designing and developing
+                      With over five years of professional experience, I specialize in designing and developing
                       end-to-end software solutions that solve complex business problems. My expertise spans
                       automation, data engineering, web development, and artificial intelligence.
                     </p>

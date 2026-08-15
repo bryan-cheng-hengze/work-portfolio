@@ -40,11 +40,7 @@ export function HomeNavBar() {
 
   return (
     <div className="flex items-center justify-between w-full px-5 lg:px-8 h-16">
-      <Link to="/" className="flex items-center group" aria-label="Home">
-        <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-transparent ring-1 ring-border">
-          <img src="/logo.png" alt="Bryan Cheng" className="h-7 w-7 object-contain" />
-        </span>
-      </Link>
+      <div className="w-9" />
 
       <NavigationMenu viewport={false} className="mx-auto">
         <NavigationMenuList className="gap-1">

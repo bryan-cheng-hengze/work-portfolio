@@ -1,5 +1,6 @@
 import tba from '../assets/tba.png';
 import auroraLegacy from '../assets/aurora-legacy.png';
+import kyraTechnologies from '../assets/kyra-technologies.png';
 
 export interface Project {
   name: string;
@@ -10,6 +11,12 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    name: "Kyra Technologies",
+    category: "Software Development",
+    url: "https://www.kyra-technologies.com/",
+    image: kyraTechnologies,
+  },
   {
     name: "Aurora Legacy",
     category: "Financial Advisory",

@@ -11,7 +11,6 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarFooter,
-  SidebarHeader,
   useSidebar,
 } from "@/components/ui/sidebar"
 import { ModeToggle } from "./ModeToggle"
@@ -41,15 +40,7 @@ export function HomeSidebar() {
 
   return (
     <Sidebar>
-      <SidebarHeader className="p-4">
-        <Link to="/" className="flex items-center" aria-label="Home">
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-transparent ring-1 ring-border shadow-sm">
-            <img src="/logo.png" alt="Bryan Cheng" className="h-7 w-7 object-contain" />
-          </span>
-        </Link>
-      </SidebarHeader>
-
-      <SidebarContent>
+      <SidebarContent className="pt-4">
         <SidebarGroup>
           <SidebarGroupLabel>Navigation</SidebarGroupLabel>
           <SidebarGroupContent>
